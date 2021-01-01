@@ -61,24 +61,25 @@ for( int i=1; i<=m;i++){
 }
 
 } 
-public static boolean isPrime(int n){
+ public static boolean isPrime(int n){
 
-     for(int i=1;i*i<=n;i++){
+     for(int i = 1; i * i <= n; i++){
        if(n % i == 0){
           return true;
        }
-       else {
+       else 
           return false;
-       }
-    }
+       
+     
+    } return true;
+ 
 }
-
 public static void primenumbers(){
     int t = scn.nextInt();
     for(int i = 1; i <= t; i++){
         int n= scn.nextInt();
 
-        if(isPrime()){
+        if(isPrime(n)){
             System.out.println("Prime.");
         }
         else{
@@ -145,7 +146,7 @@ public static void main(String[] args){
 // System.out.println(rotate(n,k));
 
 
-
+System.out.println("Hello this is Harshit.");
 
 }
 }
