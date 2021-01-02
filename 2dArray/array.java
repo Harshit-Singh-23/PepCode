@@ -145,7 +145,86 @@ public class array{
         }
     }
 
-    
+    public static void exitPoint(int[][] arr){
+        int c = 0, r = 0, dir = 0;
+        while(true){
+            dir = ( dir + arr[r][c] ) % 4;
+            if(dir == 0){
+                c++;
+                if(c == arr[0].length){
+                    System.out.println(r);
+                    System.out.println(c - 1);
+                    break;
+                }
+            }
+            else if(dir == 1){
+                r++;
+                if(r == arr.length){
+                    System.out.println(r - 1);
+                    System.out.println(c);
+                    break;
+                }
+            }
+            else if(dir == 2){
+                c--;
+                if(c == -1){
+                    System.out.println(r);
+                    System.out.println(c + 1);
+                    break;
+                }
+            }
+            else if(dir == 3){
+                r--;
+                if(r == -1){
+                    System.out.println(r + 1);
+                    System.out.println(c);
+                    break;
+                }
+            }       
+        }
+    }
+
+    public static void spiraldisplay(int[][] arr) {
+        int n = arr.length;
+        int m = arr[0].length;
+        int minr = 0;
+        int minc = 0;
+        int maxr = arr.length - 1;
+        int maxc = arr[0].length - 1;
+        int tne = n * m;
+        int count = 0;
+        while (count < tne) {
+            // left line
+            for (int i = minr, j = minc; i <= maxr && count < tne; i++) {
+                System.out.println(arr[i][j]);
+                count++;
+            }
+            minc++;
+
+            // lower line
+            for (int i = maxr, j = minc; j <= maxc && count < tne; j++) {
+                System.out.println(arr[i][j]);
+                count++;
+            }
+            maxr--;
+
+            // right line
+            for (int i = maxr, j = maxc; i >= minr && count < tne; i--) {
+                System.out.println(arr[i][j]);
+                count++;
+            }
+            maxc--;
+
+            // upper line
+            for (int i = minr, j = maxc; j >= minc && count < tne; j--) {
+                System.out.println(arr[i][j]);
+                count++;
+            }
+            minr++;
+
+
+        }
+    }
 
     public static void main(String[] args){
         int n = scn.nextInt();
