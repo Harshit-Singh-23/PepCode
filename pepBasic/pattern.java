@@ -243,6 +243,20 @@ public static void integertriangle(int row){
     }
 }
 
+// public static void pattern12(int n){               // starting from 0
+//     int x = 0, y = 1;
+//     System.out.println(x); 
+//     System.out.println(y); 
+    
+//     for(int i = 1; i < n - 1 ; i++){
+//       int c = x + y;
+//       x = y;
+//       y = c; 
+//       System.out.println(c); 
+    
+//     }
+//   }
+
 public static void pattern14(int n){
 
     for(int i=1;i<=10;i++){
@@ -285,7 +299,7 @@ public static void Pattern15(int row){
     public static void main(String[] args){
         int n = scn.nextInt();
         // mirrorTriangle(5);
-        // triangle(n);
+        triangle(n);
         // UpsideDownMirrorTriangle(n);
         // upsideDownTriangle(n);
         // diagonal(n);
@@ -295,7 +309,7 @@ public static void Pattern15(int row){
         // Pattern10(n);
         // pattern14(n);
         // mirrorPyramid(n);
-        mirrorPyramid_2(n);
+        // mirrorPyramid_2(n);
         // Pattern15(n);
         // integertriangle(n);
         // integermirrorPyramid(n);

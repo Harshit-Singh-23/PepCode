@@ -124,10 +124,10 @@ int reverseNumber(int n){
         n /= 10;
         
         ans = ans * 10 + lastDigit;
-              
+      //  cout << lastDigit << endl;             use this line for printing digits of number reversed.          
     }
-    cout<<ans<<endl; 
-    return ans;
+     cout<<ans<<endl;                        // use this line for printing whole reversed number.
+  return ans;
     
 }
 

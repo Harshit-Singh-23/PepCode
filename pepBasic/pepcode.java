@@ -63,7 +63,7 @@ for( int i=1; i<=m;i++){
 } 
 public static boolean isPrime(int n){
 
-     for(int i=1;i*i<=n;i++){
+     for(int i=1 ; i * i <= n; i++){
        if(n % i == 0){
           return true;
        }
@@ -119,11 +119,16 @@ public static int rotate(int n, int r){
     int b = n / div;
 
 return a * mul + b;
-
 }
 
+public static void inverse(int n){
+    int c = 0;
+    while(n != 0){
+        c++;
 
+    }
 
+}
 
 public static void main(String[] args){
     //     System.out.println("Hello");
