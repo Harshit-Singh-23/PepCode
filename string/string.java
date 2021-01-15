@@ -201,10 +201,10 @@ public class string{
 
     public static void main(String[] args){
         String s = scn.next();
-    //    System.out.println(isPalindrome2(s));
-    togglecase(s);
-    int[] arr = { 11, 97, 197, 339, 55, 498, 44, 39, 454545, 23, 2312, 676, 256, 555, 222222 };
-    exponForm(arr);
+       System.out.println(isPalindrome2(s));
+    // togglecase(s);
+    // int[] arr = { 11, 97, 197, 339, 55, 498, 44, 39, 454545, 23, 2312, 676, 256, 555, 222222 };
+    // exponForm(arr);
 
      }
 
