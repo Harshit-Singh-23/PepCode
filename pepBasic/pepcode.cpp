@@ -93,7 +93,7 @@ bool isprime_(int n){
 void isprime(){
     int n;
     cin >> n;
-    bool ans = isprime_(n);
+    bool ans = isprime_(n); 
     
     if(ans) cout<<"prime"<<endl;
     else cout<<"not prime"<<endl;

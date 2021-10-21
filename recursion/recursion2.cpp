@@ -201,10 +201,3 @@ int main()
     return 0;
 }
 
-char watching(char movie){
-while(movie == "tenet"){
-    char mind = "blown";
-    }
-    cout << "awsm movie";
-return (char) new_fav_movie = "tenet";
-}
